@@ -13,13 +13,13 @@
 	}
 </script>
 
-<div class="grid product-list justify-items-center ">
+<div class="grid product-list justify-items-center">
 	{#each $products as product}
 	<div>
-		<div class="bg-center bg-no-repeat bg-contain image h-96 w-96 rounded-xl" style="background-image: url({product.image})"></div>
+		<div class="bg-center bg-no-repeat bg-contain shadow-md h-80 w-96" style="background-image: url({product.image})"></div>
 	<h4>{product.name}</h4>
 	<p>{product.price} UAH</p>
-	<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md" on:click={() => addToCart(product)}>Add to cart</button>
+	<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
 	</div>
 	{/each}
 </div>

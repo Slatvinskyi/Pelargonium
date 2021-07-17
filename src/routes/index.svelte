@@ -1,6 +1,6 @@
-<nav class="fixed flex justify-between p-4 border-gray-100 shadow-md frosted">
+<nav class="flex justify-between p-4 border-gray-100 shadow-md frosted">
 	<a href="/" class="flex items-center focus:outline-none max-w-max"
-		><img alt="" class="w-10 rounded h-15" src="/logo.jpeg" />
+  ><img alt="" class="w-10 rounded h-15" src="/logo.jpeg" />
 		<div class="">
 			<h2 class="ml-2 font-serif text-3xl tracking-wide text-gray-500">Pelargonium.UA</h2>
 			<div class="w-10 h-1 ml-auto bg-gray-500"></div>
@@ -8,7 +8,7 @@
 	</a>
   
     </nav>
-    <div class="fixed top-0 right-0">
+    <div class="fixed top-0 right-0 grid flex-initial p-5 text-center border-gray-500 rounded-md shadow-md">
       <p>There are <strong>{$cart.length}</strong> types of items in your cart</p>
       <p>Total items
         <strong>{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong>
@@ -16,7 +16,7 @@
     </div>
     <div class="mx-auto my-3 max-w-max">
 		<a href="/search" class="flex items-center">
-    <img class="w-10 rounded h-15" src="/flower.jpeg" alt="" />
+    <img class="w-10 rounded h-15 animate-bounce" src="/flower.jpeg" alt="" />
 			<h1 class="py-5 mx-4 font-serif text-xl tracking-wider text-gray-500 lg:text-2xl">
 				Zonartic
 			</h1>
