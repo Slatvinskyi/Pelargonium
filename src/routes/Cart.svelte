@@ -29,37 +29,21 @@
 	
 </script>
 
-<div class="cart-list">
+<div class="cart-list ">
 	{#each $cart as item }
 		{#if item.quantity > 0}
-		<div class="cart-item">
-			<img width="50" src={item.image} alt={item.name}/>
+		<div class="grid grid-cols-3 cart-item">
+			<img width="60" src={item.image} alt={item.name}/>
 			<div>{item.quantity}
 				<button on:click={() => plusItem(item)}>+</button>
 				<button on:click={() => minusItem(item)}>-</button>
 			</div>
-			<p>�{item.price * item.quantity}</p>
+			<p>{item.price * item.quantity}</p>
 		</div>
 		{/if}
 	{/each}
-	<div class="total">
-		<h4>Total: � {total}</h4>
+	<div class="p-1 text-center border-double total">
+		<h4>Total:{total} UAH</h4>
 	</div>
 </div>
 
-
-<style>
-	.cart-item {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	.total {
-		text-align: right;
-	}
-	
-	.cart-list {
-		border: 2px solid;
-		padding: 10px;
-	}
-</style>

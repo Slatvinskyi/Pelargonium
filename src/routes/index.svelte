@@ -1,4 +1,4 @@
-<nav class="flex justify-between p-4 border-gray-100 shadow-md frosted">
+<nav class="fixed flex justify-between p-4 border-gray-100 shadow-md frosted">
 	<a href="/" class="flex items-center focus:outline-none max-w-max"
 		><img alt="" class="w-10 rounded h-15" src="/logo.jpeg" />
 		<div class="">
@@ -6,6 +6,10 @@
 			<div class="w-10 h-1 ml-auto bg-gray-500"></div>
 		</div>
 	</a>
+  <div><p>There are <strong>{$cart.length}</strong> types of items in your cart</p>
+    <p>Total items
+      <strong>{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong>
+    </p></div>
     </nav>
     <div class="mx-auto my-3 max-w-max">
 		<a href="/search" class="flex items-center">
@@ -15,16 +19,18 @@
 			</h1>
         </a>
 	</div>
-    <script>
-        import CartLength from "./CartLength.svelte";
-        import Products from "./Products.svelte";
-        import Cart from "./Cart.svelte";
-        import Address from "./Address.svelte";
-    </script>
+  <script>
     
-    <CartLength />
-    <Products />
-    <Cart />
-    <Address />
+    import Products from "./Products.svelte";
+    import Cart from "./Cart.svelte";
+    import Address from "./Address.svelte";
+    import {cart} from "./cart.js";
+    
+  </script>
+  
+  
+  <Products />
+  <Cart />
+  <Address />
 
 

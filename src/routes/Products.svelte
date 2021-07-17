@@ -13,28 +13,14 @@
 	}
 </script>
 
-<div class="product-list">
+<div class="grid product-list justify-items-center ">
 	{#each $products as product}
 	<div>
-		<div class="image" style="background-image: url({product.image})"></div>
+		<div class="bg-center bg-no-repeat bg-contain image h-96 w-96 rounded-xl" style="background-image: url({product.image})"></div>
 	<h4>{product.name}</h4>
-	<p>�{product.price}</p>
-	<button on:click={() => addToCart(product)}>Add to cart</button>
+	<p>{product.price} UAH</p>
+	<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md" on:click={() => addToCart(product)}>Add to cart</button>
 	</div>
 	{/each}
 </div>
 
-<style>
-.product-list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-	
-	.image {
-		height: 150px;
-		width: 150px;
-		background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-</style>
