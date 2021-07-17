@@ -6,11 +6,14 @@
 			<div class="w-10 h-1 ml-auto bg-gray-500"></div>
 		</div>
 	</a>
-  <div><p>There are <strong>{$cart.length}</strong> types of items in your cart</p>
-    <p>Total items
-      <strong>{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong>
-    </p></div>
+  
     </nav>
+    <div class="fixed top-0 right-0">
+      <p>There are <strong>{$cart.length}</strong> types of items in your cart</p>
+      <p>Total items
+        <strong>{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong>
+      </p>
+    </div>
     <div class="mx-auto my-3 max-w-max">
 		<a href="/search" class="flex items-center">
     <img class="w-10 rounded h-15" src="/flower.jpeg" alt="" />

@@ -29,10 +29,10 @@
 	
 </script>
 
-<div class="cart-list ">
+<div class="cart-list">
 	{#each $cart as item }
 		{#if item.quantity > 0}
-		<div class="grid grid-cols-3 cart-item">
+		<div class="top-0 right-0 grid grid-cols-3 cart-item">
 			<img width="60" src={item.image} alt={item.name}/>
 			<div>{item.quantity}
 				<button on:click={() => plusItem(item)}>+</button>
