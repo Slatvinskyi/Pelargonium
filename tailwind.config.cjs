@@ -6,7 +6,8 @@ const config = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('tailwind-hamburgers')],
+	
 };
 
 module.exports = config;

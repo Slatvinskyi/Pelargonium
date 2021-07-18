@@ -6,14 +6,8 @@
 			<div class="w-10 h-1 ml-auto bg-gray-500"></div>
 		</div>
 	</a>
-  
-    </nav>
-    <div class="fixed top-0 right-0 grid flex-initial p-5 text-center border-gray-500 rounded-md shadow-md">
-      <p>There are <strong>{$cart.length}</strong> types of items in your cart</p>
-      <p>Total items
-        <strong>{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong>
-      </p>
-    </div>
+</nav>
+    
     <div class="mx-auto my-3 max-w-max">
 		<a href="/search" class="flex items-center">
     <img class="w-10 rounded h-15 animate-bounce" src="/flower.jpeg" alt="" />
@@ -23,7 +17,7 @@
         </a>
 	</div>
   <script>
-    
+   import CartLength from "./CartLength.svelte" 
     import Products from "./Products.svelte";
     import Cart from "./Cart.svelte";
     import Address from "./Address.svelte";
@@ -31,7 +25,7 @@
     
   </script>
   
-  
+  <CartLength />
   <Products />
   <Cart />
   <Address />
