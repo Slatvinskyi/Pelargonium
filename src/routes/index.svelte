@@ -1,4 +1,4 @@
-<nav class="flex justify-between p-4 border-gray-100 shadow-md frosted">
+<nav class="flex justify-between p-4 border-gray-100 shadow-md frosted ">
 	<a href="/" class="flex items-center focus:outline-none max-w-max"
   ><img alt="" class="w-10 rounded h-15" src="/logo.jpeg" />
 		<div class="">
@@ -7,6 +7,7 @@
 		</div>
 	</a>
 </nav>
+
     
     <div class="mx-auto my-3 max-w-max">
 		<a href="/search" class="flex items-center">
@@ -17,10 +18,11 @@
         </a>
 	</div>
   <script>
+    
    import CartLength from "./CartLength.svelte" 
     import Products from "./Products.svelte";
     import Cart from "./Cart.svelte";
-    import Address from "./Address.svelte";
+ 
     import {cart} from "./cart.js";
     
   </script>
@@ -28,6 +30,6 @@
   <CartLength />
   <Products />
   <Cart />
-  <Address />
+
 
 

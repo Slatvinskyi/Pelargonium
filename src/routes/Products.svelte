@@ -13,6 +13,7 @@
 	}
 </script>
 
+
 <div class="grid product-list justify-items-center">
 	{#each $products as product}
 	<div>
