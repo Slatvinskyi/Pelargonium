@@ -1,0 +1,27 @@
+<h1>Rosebud</h1>
+<script>
+    import {products, cart} from "./rosebud.js";
+
+const addToCart = (product) => {
+    for(let item of $cart) {
+            if(item.id === product.id) {
+                product.quantity += 1
+                $cart = $cart;
+                return;
+            }
+    }
+    $cart = [...$cart, product]
+}
+</script>
+
+
+<div class="grid product-list justify-items-center">
+{#each $products as product}
+<div>
+    <div class="bg-center bg-no-repeat bg-contain shadow-md h-80 w-96" style="background-image: url({product.image})"></div>
+<h4>{product.name}</h4>
+<p>{product.price} UAH</p>
+<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
+</div>
+{/each}
+</div>
