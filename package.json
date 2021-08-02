@@ -16,6 +16,7 @@
 		"sv-bootstrap-dropdown": "^0.4.4",
 		"svelte": "^3.38.3",
 		"svelte-preprocess": "^4.7.3",
+		"svelte-swipe": "^1.8.1",
 		"tailwindcss": "^2.2.4"
 	},
 	"type": "module",

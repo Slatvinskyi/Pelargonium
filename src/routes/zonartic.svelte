@@ -1,4 +1,10 @@
-<h1>Zonartic</h1>
+<div class="mx-auto my-3 max-w-max">
+    <a href="/search" class="flex items-center">
+      <img class="w-10 rounded h-15 animate-bounce" src="/flower.jpeg" alt="" />
+      <h1 class="py-5 mx-4 font-serif text-xl tracking-wider text-gray-500 lg:text-2xl">Zonartic</h1>
+    </a>
+  </div>
+  
 <script>
     import {products, cart} from "./zonartic.js";
 
