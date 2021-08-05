@@ -1,6 +1,7 @@
 <script>
 
 	import {cart } from "./cart.js";
+
 	
 	const minusItem = (product) => {
 		for(let item of $cart) {
@@ -29,11 +30,12 @@
 		$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
 	
 </script>
-<div class="fixed left-0 inline-flex top-24">
+<div class="fixed left-0 inline-flex top-32">
 	<div class="relative inline-block dropdown">
 		<button class="inline-flex items-center px-4 py-2 font-semibold text-gray-700 bg-gray-300 rounded">
-			<span class="mr-1">buy</span>
-			<svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+			<span class="mr-1"></span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg>
+			<p>  <strong class="animate-ping">{$cart.reduce((sum, item) => sum + item.quantity, 0)}</strong></p>
 		</button>
 		<ul class="absolute hidden pt-1 text-gray-700 dropdown-menu">
 			<li class=""><a class="flex-wrap block w-64 h-auto p-1 bg-gray-200 rounded-b hover:bg-gray-400" href="#">

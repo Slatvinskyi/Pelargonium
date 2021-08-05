@@ -1,8 +1,9 @@
-<nav class="flex justify-between p-4 border-gray-100 shadow-md frosted flex-nowrap">
+<nav class="fixed p-4 w-full bg-white shadow">
+  
     <a href="/home" class="flex items-center focus:outline-none max-w-max">
-      <img alt="" class="w-10 rounded h-15" src="/logo.jpeg" />
+      <!--<img alt="" class="w-10 rounded h-15 " src="/logo.jpeg" />-->
       <div class="">
-        <h2 class="ml-2 font-serif text-3xl tracking-wide text-gray-500 ">Pelargonium.UA</h2>
+        <h2 class=" text-3xl text-gray-500 align-middle">Pelargonium.UA</h2>
         
 
         <nav id="primary_nav_wrap" class="list-none float-left m-0 p-0 ">
@@ -32,6 +33,7 @@
           </ul>
         </div>
       </a>
+   
     </nav>
     
     

@@ -26,15 +26,15 @@
   <div class="swipe-holder">
     <Swipe {...swipeConfig}>
       <SwipeItem>
-        <img src="/flower2.jpg" alt="">
+        <img src="./flower2.JPG" alt="">
       </SwipeItem>
   
       <SwipeItem>
-        <img src="/banner.jpg" alt="">
+        <img src="/banner.JPG" alt="">
       </SwipeItem>
   
       <SwipeItem>
-        <img src="/J1.jpg" alt="">
+        <img src="/J1.JPG" alt="">
       </SwipeItem>
     </Swipe>
   </div>
