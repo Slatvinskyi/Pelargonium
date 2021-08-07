@@ -20,7 +20,7 @@
 		<div class="bg-center bg-no-repeat bg-contain shadow-md h-80 w-96" style="background-image: url({product.image})"></div>
 		<h4>{product.name}</h4>
 		<p>{product.price} UAH</p>
-		<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
+		<button class="flex items-center justify-center w-24 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
 	</div>
 	{/each}
 </div>

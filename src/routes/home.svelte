@@ -17,6 +17,9 @@
       height: 60vh;
       width: 100%;
     }
+    .img {
+      background-size: contain;
+    }
     
   </style>
   
