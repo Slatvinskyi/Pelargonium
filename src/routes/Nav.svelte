@@ -1,95 +1,28 @@
-<nav class="fixed p-4 w-full bg-white shadow">
-  
-    <a href="/home" class="flex items-center focus:outline-none max-w-max">
-      <!--<img alt="" class="w-10 rounded h-15 " src="/logo.jpeg" />-->
-      <div class="">
-        <h2 class=" text-3xl text-gray-500 align-middle">Pelargonium.UA</h2>
-        
-
-        <nav id="primary_nav_wrap" class="list-none float-left m-0 p-0 ">
-          <ul class="text-gray-700 no-underline font-bold text-sm leading-loose font-sans">
-            <li class="current-menu-item bg-blend-color-dodge "><a href="/home">Home</a></li>
-            <li><a href="#">Kinds</a>
-              <ul class="relative">
-                <li><a href="/rosebud">Rosebud</a></li>
-                <li><a href="/zonartic">Zonartic</a></li>
-                <li><a href="#">Sub Menu 3</a></li>
-                <li><a href="#">Sub Menu 4</a>
-                  <ul>
-                    <li><a href="#">Deep Menu 1</a>
-                      <ul>
-                        <li><a href="#">Sub Deep 1</a></li>
-                        <li><a href="#">Sub Deep 2</a></li>
-                        <li><a href="#">Sub Deep 3</a></li>
-                        <li><a href="#">Sub Deep 4</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Deep Menu 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sub Menu 5</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </a>
-   
-    </nav>
+    <script>
+        import BurgerMenu from 'svelte-burger-menu';
+    </script>
+    <div class="fixed top-0">
+    <BurgerMenu padding={'25px'} backgroundColor={'rgb(0, 0, 0)'} menuColor={'rgb(255,255,255)'}>
+      <h1 class="font-bold text-lg tracking-wider text-white">PELAEGONIUM.UA</h1>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/rosebud">Rosebud</a></li>
+          <li><a href="/zonartic">Zonartic</a></li>
+          
+        </ul>
+    </BurgerMenu>
+    
+  </div>
+  <h1 class="fixed py-4 mx-12 font-bold text-xl tracking-wider text-black lg:text-2xl">PELAEGONIUM.UA</h1>
+    <button class="fixed right-36 top-4"><a href=""></a><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg></button>
+    <button class="fixed right-24 top-4"><a href=""></a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></button>
+    <button class="fixed right-12 top-4"><a href=""></a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></button>
     
     
   
-    <style>
+    
     
    
       
-      #primary_nav_wrap ul a
-      {
-        padding:0 15px;
-     }
-      
-      #primary_nav_wrap ul li
-      {
-        position:relative;
-        float:left;
-        margin:0;
-        padding:0
-      }
 
-      #primary_nav_wrap ul li:hover
-      {
-        background:#f6f6f6
-      }
-      
-      #primary_nav_wrap ul ul
-      {
-        display:none;
-        position:absolute;
-        top:100%;
-        left:0;
-        background:#fff;
-        padding:0
-      }
-      
-      #primary_nav_wrap ul ul li
-      {
-        float:none;
-        width:200px
-      }
-      
-      #primary_nav_wrap ul ul a
-      {
-        line-height:120%;
-        padding:10px 15px
-      }
-      
-      #primary_nav_wrap ul ul ul
-      {
-        top:0;
-        left:100%
-      }
-      
-      #primary_nav_wrap ul li:hover > ul
-      {
-        display:block
-      }
-      </style>
+     

@@ -17,13 +17,10 @@
       height: 60vh;
       width: 100%;
     }
-    img{
-      max-width: 100%;
-      height: auto;
-    }
+    
   </style>
   
-  <div class="swipe-holder">
+  <div class="swipe-holder top-32">
     <Swipe {...swipeConfig}>
       <SwipeItem>
         <img src="./flower2.JPG" alt="">
