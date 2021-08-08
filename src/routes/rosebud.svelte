@@ -1,6 +1,7 @@
-<h1>Rosebud</h1>
+   
 <script>
-    import {products, cart} from "./rosebud.js";
+    import {products, cart} from "./cart.js";
+  
 
 const addToCart = (product) => {
     for(let item of $cart) {
@@ -14,14 +15,21 @@ const addToCart = (product) => {
 }
 </script>
 
-
+<h1 class="text-xl text-black mx-auto">Rosebud</h1>
 <div class="grid product-list justify-items-center">
 {#each $products as product}
 <div>
     <div class="bg-center bg-no-repeat bg-contain shadow-md h-80 w-96" style="background-image: url({product.image})"></div>
-<h4>{product.name}</h4>
-<p>{product.price} UAH</p>
-<button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
+    <h4>{product.name}</h4>
+    <p>{product.price} UAH</p>
+    <button class="flex items-center justify-center w-24 text-white bg-black rounded-md shadow-md animate-pulse mx-auto" on:click={() => addToCart(product)}>Add to cart</button>
 </div>
 {/each}
 </div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+    h1 {
+      font-family: 'Montez', cursive;
+    }
+    
+    </style>

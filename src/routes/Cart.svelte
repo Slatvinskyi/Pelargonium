@@ -30,7 +30,7 @@
 		$: total = $cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
 	
 </script>
-<div class="fixed right-44 inline-flex top-2">
+<div class="fixed right-44 inline-flex top-2 z-50">
 	<div class="relative inline-block dropdown">
 		<button class="inline-flex items-center px-4 py-2">
 			<span class="mr-1"></span>

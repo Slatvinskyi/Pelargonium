@@ -8,11 +8,11 @@
    <script>
         import BurgerMenu from 'svelte-burger-menu';
     </script>
-    <div class="fixed top-0">
+    <div class="fixed top-0 z-50">
     <BurgerMenu padding={'25px'} backgroundColor={'rgb(0, 0, 0)'} menuColor={'rgb(255,255,255)'}>
       <h1 class="font-bold text-xl tracking-wider text-white">Pelargonium.UA</h1>
         <ul>
-          <li><a href="/home">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/rosebud">Rosebud</a></li>
           <li><a href="/zonartic">Zonartic</a></li>
           

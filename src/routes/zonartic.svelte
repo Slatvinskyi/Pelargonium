@@ -1,12 +1,7 @@
-<div class="mx-auto my-3 max-w-max">
-    <a href="/search" class="flex items-center">
-      <img class="w-10 rounded h-15 animate-bounce" src="/flower.jpeg" alt="" />
-      <h1 class="py-5 mx-4 font-serif text-xl tracking-wider text-gray-500 lg:text-2xl">Zonartic</h1>
-    </a>
-  </div>
   
 <script>
-    import {products, cart} from "./zonartic.js";
+    import {products, cart} from "./cart.js";
+  
 
 const addToCart = (product) => {
     for(let item of $cart) {
@@ -20,14 +15,14 @@ const addToCart = (product) => {
 }
 </script>
 
-
+<h1>Zonartic</h1>
 <div class="grid product-list justify-items-center">
 {#each $products as product}
 <div>
     <div class="bg-center bg-no-repeat bg-contain shadow-md h-80 w-96" style="background-image: url({product.image})"></div>
     <h4>{product.name}</h4>
     <p>{product.price} UAH</p>
-    <button class="flex items-center justify-center w-1/2 text-white bg-black rounded-md shadow-md animate-pulse" on:click={() => addToCart(product)}>Add to cart</button>
+    <button class="flex items-center justify-center w-24 text-white bg-black rounded-md shadow-md animate-pulse mx-auto" on:click={() => addToCart(product)}>Add to cart</button>
 </div>
 {/each}
 </div>
